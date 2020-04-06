@@ -3,5 +3,5 @@ check50:
     - !exclude "*"
     - !require "hello.c"
   remote:
-    org:
-      "me50dev"
+    org: "me50dev"
+    callback: "https://submit50dev.ngrok.io/hooks/result"
