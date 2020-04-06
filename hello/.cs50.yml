@@ -1,0 +1,7 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "hello.c"
+  remote:
+    org:
+      "me50dev"
