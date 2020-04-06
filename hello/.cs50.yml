@@ -1,7 +1,11 @@
 check50:
-  files:
+  files: &check50_files
     - !exclude "*"
     - !require "hello.c"
-  remote:
+  remote: &check50_remote
     org: "me50dev"
     callback: "https://submit50dev.ngrok.io/hooks/result"
+
+submit50:
+  files: *check50_files
+  remote: *check50_remote
